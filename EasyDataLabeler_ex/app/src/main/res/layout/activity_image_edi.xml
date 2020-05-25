@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#0099cc"
+    tools:context=".ImageEditActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/fullscreen_content_controls"
+        style="?metaButtonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="664dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginTop="64dp"
+        android:background="@color/black_overlay"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UselessParent">
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="587dp"></com.github.chrisbanes.photoview.PhotoView>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:layout_below="@+id/image_view"
+            android:layout_marginTop="3dp">
+
+            <LinearLayout
+                android:id="@+id/Labels"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/polygon"
+        android:layout_width="57dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="4dp"
+        android:background="@mipmap/ic_poly"
+        android:onClick="polygon_click"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/saveFile"
+        android:layout_width="57dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="4dp"
+        android:background="@mipmap/ic_save"
+        android:onClick="saveFile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="48dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="4dp"
+        android:background="@mipmap/ic_tick"
+        android:onClick="complete_polygon_click"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/undo"
+        android:layout_width="48dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="344dp"
+        android:layout_marginTop="4dp"
+        android:background="@mipmap/ic_undo"
+        android:onClick="undo_click"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/rectangle"
+        android:layout_width="57dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:background="@mipmap/ic_rect"
+        android:onClick="rectangle_click"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="414dp"
+        android:layout_height="66dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

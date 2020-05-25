@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "824380670283",
+    "firebase_url": "https://easydatalabelerex.firebaseio.com",
+    "project_id": "easydatalabelerex",
+    "storage_bucket": "easydatalabelerex.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:824380670283:android:dae5de7200d98c4bf1a8ce",
+        "android_client_info": {
+          "package_name": "com.example.easydatalabeler"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "824380670283-4dj7dcn2dkl2vhtckht5v87ds4c1ltre.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxvWR9Z24i_9SWIXBPhL4xdiY9kp_A8LI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "824380670283-4dj7dcn2dkl2vhtckht5v87ds4c1ltre.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
